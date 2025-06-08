@@ -6,71 +6,74 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1377</width>
-    <height>854</height>
+    <width>799</width>
+    <height>610</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="myWidget">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <layout class="QFormLayout" name="formLayout">
-    <item row="0" column="0">
-     <layout class="QVBoxLayout" name="verticalLayout_3">
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
-         <widget class="QComboBox" name="box_2">
-          <item>
-           <property name="text">
-            <string>GET</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>POST</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>PUT</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>DELETE</string>
-           </property>
-          </item>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="line_2"/>
-        </item>
-        <item>
-         <widget class="QPushButton" name="button_2">
-          <property name="text">
-           <string>点击</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>地址栏：</string>
+        </property>
+       </widget>
       </item>
       <item>
-       <widget class="QWebEngineView" name="webEngineView">
-        <property name="url">
-         <url>
-          <string>about:blank</string>
-         </url>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>访问</string>
         </property>
        </widget>
       </item>
      </layout>
     </item>
+    <item>
+     <widget class="QWebEngineView" name="webEngineView">
+      <property name="minimumSize">
+       <size>
+        <width>776</width>
+        <height>491</height>
+       </size>
+      </property>
+      <property name="url">
+       <url>
+        <string>about:blank</string>
+       </url>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>799</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <customwidgets>
   <customwidget>
