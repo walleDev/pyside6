@@ -9,6 +9,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.ui = QUiLoader().load('ui/main.ui')
+        # 使用 QWebEngineView 作为中心部件
         self.setCentralWidget(QWebEngineView())
         self.ui.pushButton.clicked.connect(self.handleCalc)
 
